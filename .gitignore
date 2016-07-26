@@ -1,0 +1,12 @@
+*.swp
+*.pyc
+.DS_Store
+.Python
+pip-selfcheck.json
+
+venv/
+build/
+dist/
+*.egg-info
+
+export.*
