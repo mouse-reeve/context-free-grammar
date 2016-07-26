@@ -8,7 +8,7 @@ class CFG(object):
     ''' a grammar from an input file '''
 
     def __init__(self, grammar):
-        self.grammar = nltkCFG.fromString(grammar)
+        self.grammar = nltkCFG.fromstring(grammar)
 
 
     def get_sentence(self, start=None, depth=7):
@@ -34,6 +34,7 @@ class CFG(object):
             return sentence
         else:
             return [start]
+
 
     def format_sentence(self, sentence):
         ''' fix display formatting of a sentence array '''
