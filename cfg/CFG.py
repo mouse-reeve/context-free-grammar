@@ -19,7 +19,7 @@ class CFG(object):
         start = start if start else self.grammar.start()
 
         if isinstance(start, Nonterminal):
-            productions = self.grammar.productions(start)
+            productions = self.grammar.start()
             if not depth:
                 # time to break the cycle
                 terminals = [p for p in productions \
